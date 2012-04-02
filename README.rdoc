@@ -1,3 +1,29 @@
 = SqlQueriesCount
 
+== About
+
+It's a rails plugin that adds number of SQL queries that were done during processing request to your log. So instead of:
+
+    Completed 200 OK in 249ms (Views: 141.8ms | ActiveRecord: 9.6ms)
+
+you will get:
+
+    Completed 200 OK in 249ms (Views: 141.8ms | ActiveRecord: 9.6ms | SQL count: 9)
+
+Works with rails 3.0 and above.
+
+== Installation
+
+Add in your Gemfile:
+
+    gem 'sql_queries_count'
+
+Consider including it in development group, if you want to keep your production logs intact.
+
+== License
+
 This project rocks and uses MIT-LICENSE.
+
+== Author
+
+Kacper Cieśla (comboy)
